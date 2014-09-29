@@ -1,0 +1,13 @@
+<div id= "new_user_form">
+
+
+	<%= form_for @user, remote: true do |u| %>
+	
+		<%= u.label :name %>
+		<%= u.text_field :name %>
+		
+		<%= u.submit %>
+		 
+	<% end %>
+
+</div>
