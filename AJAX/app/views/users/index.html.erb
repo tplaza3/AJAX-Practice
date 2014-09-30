@@ -7,7 +7,11 @@
 
 	<div id="all_users">
 		
-	<%= render :partial => "users" %>
+	<% @users.each do |u| %>
+
+		<p><%= u.name%></p>
+
+	<% end %>
 	
 	</div>
 

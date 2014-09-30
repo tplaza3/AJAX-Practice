@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     @users = User.all
     
     respond_to do |format|
-      format.html { redirect_to users_path }
+      format.html 
       format.js  
     end    
   end
